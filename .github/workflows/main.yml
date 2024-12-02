@@ -17,7 +17,7 @@ jobs:
       with:
         server: 103.76.129.70
         username: nusantarahospital@readonewebdev.my.id
-        password: hospital15
+        password: nusantara15
         exclude: |
           **/.git*
           **/.git*/**
