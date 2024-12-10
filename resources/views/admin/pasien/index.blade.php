@@ -32,7 +32,7 @@
         <td scope="col" class="text-center px-3">{{$patien->tempat_lahir}}</td>
         <td scope="col" class="text-center px-3">{{$patien->tanggal_lahir}}</td>
         <td scope="col" class="text-center px-3">
-          <a href="/detail/{{$patien->id}}">
+          <a href="admin/pasien/detail/{{$patien->id}}">
             <button class="btn btn-primary">Detail</button>
           </a>
         </td>
