@@ -35,7 +35,7 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
         if(Auth::attempt($login)){
-            return redirect()->route('pasien.index')->with('success', 'Selamat datang admin, selamat bekerja');
+            return redirect()->route('admin.dashboard')->with('success', 'Selamat datang admin, selamat bekerja');
         }else{
             return redirect()->back()->with('failed', 'password atau username salah');
         }

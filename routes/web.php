@@ -20,8 +20,11 @@ use Illuminate\Support\Facades\Http;
 //     return view('welcome');
 // });
 
-Route::group(['prefix' => '/', 'middleware' => 'auth'], function(){
-    Route::group(['prefix' => '/'], function(){
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
+    Route::get('dashboard', function(){
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+    Route::group(['prefix' => '/pasien'], function(){
         Route::get('/', [PatienController::class, 'index'])->name('pasien.index');
         Route::get('/detail/{id}', [PatienController::class, 'detail'])->name('pasien.detail');
         Route::get('detail/pemeriksaan/{id}', [PatienController::class, 'pemeriksaan']);
@@ -71,4 +74,4 @@ Route::get('/nusantara-hospital/register', function(){
 });
 Route::post('/nusantara-hospital-post', [RegisterPatienController::class, 'store']);
 
-Route::get('/nusantara-hospital', [HomepageController::class, 'index']);
+Route::get('/', [HomepageController::class, 'index']);

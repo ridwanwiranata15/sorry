@@ -60,7 +60,7 @@
                                 <input type="tel" class="form-control" id="phone" name="nomor_whatsapp" placeholder="Masukkan Keluhan Anda" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Daftar</button>
-                            <a href="/nusantara-hospital">
+                            <a href="/">
                             <button type="button" class="btn btn-danger">Kembali</button>
                             </a>
                         </form>
