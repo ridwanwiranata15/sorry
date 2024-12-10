@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-name: Nusantara hospital
-=======
+
 name: nusantarahospital
->>>>>>> 1a2e77261b559d282be41752f61c03a5c2a22bd4
 
 on:
   push:
@@ -15,17 +12,13 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-    
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 103.76.129.70
         username: nusantarahospital@readonewebdev.my.id
-<<<<<<< HEAD
-        password: nusantara15
-=======
         password: hospital15
->>>>>>> 1a2e77261b559d282be41752f61c03a5c2a22bd4
         exclude: |
           **/.git*
           **/.git*/**
