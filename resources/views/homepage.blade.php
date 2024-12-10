@@ -1,183 +1,664 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nusantara hospital</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        .carousel-caption {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-    </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Nusantara hospital</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
-    <nav class="navbar bg-body-tertiary">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1>Nusantara <span class="text-primary">Hospital</span></h1>
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +01 123455678990
+              </span>
             </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : demo@gmail.com
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+          </div>
         </div>
-    </nav>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="">
+            </a>
 
-    <!-- Opening page -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="treatment.html">Treatment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctor.html">Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="quote_btn-container">
+                <a href="">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <span>
+                    Login
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <span>
+                    Sign Up
+                  </span>
+                </a>
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="dot_design">
+        <img src="images/dots.png" alt="">
+      </div>
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{asset('ruang.png')}}" class="d-block w-100 opacity-25" alt="..." height="750px">
-                <div class="carousel-caption">
-                    <h1 class="text-dark">Nusantara <span class="text-primary">Hospital</span></h1>
-                    <p style="color: salmon;font-size:xx-large;">Karena setiap nafas berharga</p>
-                    <p class="text-dark"> Menyediakan layanan kesehatan yang berkualitas, terjangkau, dan berorientasi pada
-                        kebutuhan pasien dengan mengutamakan keselamatan, kenyamanan, serta
-                        kepercayaan masyarakat</p>
-                    <a href="#pelayanan">
-                    <button class="btn btn-primary">Learn more</button>
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <div class="play_btn">
+                      <button>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h1>
+                      Nusantara<br>
+                      <span>
+                        Hospital
+                      </span>
+                    </h1>
+
+                    <a href="">
+                      Contact Us
                     </a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- pelayanan kami -->
-    <div class="bg-primary p-1 text-white" id="pelayanan">
-        <h1>Pelayanan kami</h1>
-        <h1><b> Nusantara hospital menyediakan berbagai macam pelayanan</b></h1>
-        <div class="d-flex flex-wrap">
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Rawat Inap</h5>
-                    <p class="card-text">Penyediaan kamar untuk pasien yang membutuhkan perawatan intensif atau pengawasan medis selama beberapa hari.</p>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.jpg" alt="">
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Rawat jalan</h5>
-                    <p class="card-text">Pemeriksaan oleh dokter spesialis atau umum tanpa perlu menginap.
-                        Termasuk poliklinik khusus, seperti:
-                        Poli anak.
-                        Poli penyakit dalam.
-                        Poli bedah.
-                        Poli gigi.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Gawat Darurat (Emergency Services)</h5>
-                    <p class="card-text">Penyediaan kamar untuk pasien yang membutuhkan perawatan intensif atau pengawasan medis selama beberapa hari.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Layanan Diagnostik</h5>
-                    <p class="card-text">aboratorium: pemeriksaan darah, urin, dan tes lainnya.
-                        Radiologi: rontgen, CT scan, MRI, USG.
-                        Patologi anatomi: biopsi dan analisis jaringan..</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"> Layanan Bedah</h5>
-                    <p class="card-text">Fisioterapi untuk pemulihan fungsi fisik.
-                        Terapi okupasi dan terapi bicara.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Layanan Rehabilitasi Medis</h5>
-                    <p class="card-text">Bedah umum dan spesialis (orthopedi, urologi, bedah saraf, dll.).
-                        Bedah elektif (terencana) dan darurat.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"> Layanan Kebidanan dan Kandungan</h5>
-                    <p class="card-text">Pemeriksaan kehamilan.
-                        Persalinan (normal dan caesar).
-                        Konsultasi fertilitas dan kesehatan reproduksi.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body"> Layanan Farmasi</h5>
-                    <p class="card-text">Penyuluhan terkait penyakit tertentu.
-                        Edukasi gizi, kebersihan, dan pencegahan penyakit..</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"> Layanan Penyuluhan dan Edukasi Kesehatan</h5>
-                    <p class="card-text">Bedah umum dan spesialis (orthopedi, urologi, bedah saraf, dll.).
-                        Bedah elektif (terencana) dan darurat.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Layanan Gizi</h5>
-                    <p class="card-text">Penyediaan makanan sesuai kebutuhan gizi pasien rawat inap.
-                        Konsultasi diet untuk pasien rawat jalan.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Layanan Kesehatan Jiwa</h5>
-                    <p class="card-text">Bedah umum dan spesialis (orthopedi, urologi, bedah saraf, dll.).
-                        Bedah elektif (terencana) dan darurat.</p>
-                </div>
-            </div>
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Layanan Penunjang Lainnya</h5>
-                    <p class="card-text">Ambulans untuk transportasi pasien.
-                        Homecare untuk pasien yang membutuhkan perawatan di rumah.
-                        Pusat informasi pasien dan pengaduan..</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- pelayanan kami -->
-    <!-- Tenaga medis -->
-    <div style="background-color: salmon;">
-        <h1 class="text-center">Tenaga medis berpengalaman</h1>
-        <div class="d-flex flex-wrap">
-            @foreach($doctors as $doctor)
-            <div class="card mx-3 my-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">{{$doctor->nama}}</h5>
-                    <p class="card-text">{{$doctor->poly->nama}}</p>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-    <!-- Tenaga medis -->
-     <!-- closing -->
-     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{asset('ruang.png')}}" class="d-block w-100 opacity-25" alt="..." height="750px">
-                <div class="carousel-caption">
-                    <h1 class="text-dark">Nusantara <span class="text-primary">Hospital</span></h1>
-                    <p style="color: salmon;">Kp tamansari rt 01 rw 05 desa karyasari kecamatan leuwilang kabupaten
-                    bogor</p>
-                    <p class="text-dark"> Jagokoding15@gmail.com</p>
-                    <a href="/nusantara-hospital/register">
-                    <button class="btn btn-primary">Pendaftaran pasien</button>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Nusantara<br>
+                      <span>
+                        Hospital
+                      </span>
+                    </h1>
+
+                    <a href="">
+                      Contact Us
                     </a>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.jpg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <div class="play_btn">
+                      <button>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h1>
+                      Nusantara<br>
+                      <span>
+                        Hospital
+                      </span>
+                    </h1>
+                    <p>
+
+                    </p>
+                    <a href="">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <img src="images/prev.png" alt="">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <img src="images/next.png" alt="">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- book section -->
+
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+      </div>
     </div>
+  </section>
 
 
+  <!-- end book section -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- about section -->
+
+  <section class="about_section">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span>Hospital</span>
+              </h2>
+            </div>
+            <p>
+              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- treatment section -->
+
+  <section class="treatment_section layout_padding">
+    <div class="side_img">
+      <img src="images/treatment-side-img.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Hospital <span>Treatment</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Nephrologist Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Eye Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Pediatrician Clinic
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Parental Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end treatment section -->
+
+  <!-- team section -->
+
+  <section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our <span>Doctors</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel team_carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team1.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Hennry
+                </h5>
+                <h6>
+                  MBBS
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Jenni
+                </h5>
+                <h6>
+                  MBBS
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team3.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Morco
+                </h5>
+                <h6>
+                  MBBS
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end team section -->
+
+
+  <!-- client section -->
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="info_top">
+        <div class="info_logo">
+          <a href="">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="info_form">
+          <form action="">
+            <input type="email" placeholder="Your email">
+            <button>
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="info_bottom layout_padding2">
+        <div class="row info_main_row">
+          <div class="col-md-6 col-lg-3">
+            <h5>
+              Address
+            </h5>
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_links">
+              <h5>
+                Useful link
+              </h5>
+              <div class="info_links_menu">
+                <a class="active" href="index.html">
+                  Home
+                </a>
+                <a href="about.html">
+                  About
+                </a>
+                <a href="treatment.html">
+                  Treatment
+                </a>
+                <a href="doctor.html">
+                  Doctors
+                </a>
+                <a href="testimonial.html">
+                  Testimonial
+                </a>
+                <a href="contact.html">
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+                LATEST POSTS
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="images/post1.jpg" alt="">
+                </div>
+                <p>
+                  Normal
+                  distribution
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="images/post2.jpg" alt="">
+                </div>
+                <p>
+                  Normal
+                  distribution
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+                News
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="images/post3.jpg" alt="">
+                </div>
+                <p>
+                  Normal
+                  distribution
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="images/post4.png" alt="">
+                </div>
+                <p>
+                  Normal
+                  distribution
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
 </body>
 
 </html>

@@ -5,8 +5,14 @@
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+        <a href="{{route('pasien.index')}}" class="nav-link text-white" aria-current="page">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+          Dashboard
+        </a>
+      </li>
       <li class="nav-item">
-        <a href="{{route('pasien.index')}}" class="nav-link active" aria-current="page">
+        <a href="{{route('pasien.index')}}" class="nav-link text-white" aria-current="page">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
           Pasien
         </a>

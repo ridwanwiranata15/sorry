@@ -20,7 +20,7 @@ class PatienController extends Controller
         $patien = Patien::find($id);
         return view('admin.pasien.detail', [
             'patien' => $patien,
-            
+
         ]);
     }
     public function pemeriksaan($id){
@@ -32,7 +32,7 @@ class PatienController extends Controller
     }
     public function store_pemeriksaan(Request $request, $id){
     $pasien = Patien::find($id);
-    
+
     // Buat data pemeriksaan
     Pemeriksaan::create([
         'id_pasien' => $pasien->id,
@@ -44,9 +44,15 @@ class PatienController extends Controller
     $pasien->update(['kode_pendaftaran' => $kode_pendaftaran]);
 
     // Kirim email kode pendaftaran
-    $nomor_whatsapp = $pasien->nomor_whatsapp;
-    $pesan = "Pendaftaran Anda selesai. Kami siap melayani Anda. Berikut kode pendaftaran Anda: $kode_pendaftaran";
-    $url = "https://wa.me/$nomor_whatsapp?text=" . urlencode($pesan);
+    $email = $pasien->email;
+    $subjek = "ini subjek";
+    $pesan = "ini adalah pesan anda";
+
+    $url = "https://mail.google.com/mail/?view=cm&fs=1&to=$email&su=" . urlencode($subjek) . "&body=" . urlencode($pesan);
+    // $nomor_whatsapp = $pasien->nomor_whatsapp;
+    // $pesan = "Pendaftaran Anda selesai. Kami siap melayani Anda. Berikut kode pendaftaran Anda: $kode_pendaftaran";
+    // $url = "https://wa.me/$nomor_whatsapp?text=" . urlencode($pesan);
+
 
     // Redirect ke WhatsApp atau tampilkan URL ke pengguna
     return redirect($url);
@@ -56,5 +62,5 @@ public function search(Request $request){
     $patiens = Patien::where('kode_pendaftaran', 'LIKE', '%'.$search.'%')->get();
     return view('admin.pasien.index', ['patiens' => $patiens]);
 }
-    
+
 }

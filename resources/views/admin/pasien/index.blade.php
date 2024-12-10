@@ -8,7 +8,7 @@
     <p class="text-center">{{session('success')}}</p>
   </div>
   @endif
-  <form action="pasien/search" method="get" class="m-3">
+  <form action="/search" method="get" class="m-3">
     <input type="text" class="form-input" name="search">
     <button class="btn btn-primary">Cari</button>
   </form>
@@ -40,4 +40,15 @@
       @endforeach
     </tbody>
   </table>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Lebih dari 10% pasien kami layani</h2>
+        <div class="card">
+            <div class="card-body">
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+
   @endsection

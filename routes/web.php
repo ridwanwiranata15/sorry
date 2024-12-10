@@ -27,7 +27,7 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function(){
         Route::get('detail/pemeriksaan/{id}', [PatienController::class, 'pemeriksaan']);
         Route::get('send-email', [PatienController::class, 'SendEmail']);
         Route::post('detail/pemeriksaan/{id}/post', [PatienController::class, 'store_pemeriksaan'])->name('pemeriksaan');
-        Route::get('search', [PatienController::class, 'search']);
+        Route::get('search', [PatienController::class, 'search'])->name('patien.search');
     });
     Route::group(['prefix' => 'doctor'], function(){
         Route::get('/', [DoctorController::class, 'index'])->name('dokter.index');
