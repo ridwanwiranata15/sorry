@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Http;
 //     return view('welcome');
 // });
 
-Route::group(['prefix' => '/', 'middleware' => 'auth'], function(){
-    Route::group(['prefix' => '/'], function(){
+Route::group(['prefix' => '/admin', 'middleware' => 'auth'], function(){
+    Route::group(['prefix' => '/pasien'], function(){
         Route::get('/', [PatienController::class, 'index'])->name('pasien.index');
         Route::get('/detail/{id}', [PatienController::class, 'detail'])->name('pasien.detail');
         Route::get('detail/pemeriksaan/{id}', [PatienController::class, 'pemeriksaan']);
