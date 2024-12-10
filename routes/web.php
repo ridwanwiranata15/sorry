@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Http;
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::group(['prefix' => 'pasien'], function(){
-        Route::get('/index', [PatienController::class, 'index'])->name('pasien.index');
+        Route::get('/', [PatienController::class, 'index'])->name('pasien.index');
         Route::get('/detail/{id}', [PatienController::class, 'detail'])->name('pasien.detail');
         Route::get('detail/pemeriksaan/{id}', [PatienController::class, 'pemeriksaan']);
         Route::get('send-email', [PatienController::class, 'SendEmail']);
@@ -30,7 +30,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
         Route::get('search', [PatienController::class, 'search'])->name('patien.search');
     });
     Route::group(['prefix' => 'doctor'], function(){
-        Route::get('/index', [DoctorController::class, 'index'])->name('dokter.index');
+        Route::get('/', [DoctorController::class, 'index'])->name('dokter.index');
         Route::get('/create', [DoctorController::class, 'create'])->name('dokter.create');
         Route::post('/store-create', [DoctorController::class, 'store'])->name('dokter.post');
         Route::get('/edit/{id}', [DoctorController::class, 'edit'])->name('dokter.edit');
@@ -46,7 +46,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
         Route::delete('/delete/{id}', [PoliController::class, 'delete'])->name('poli.delete');
     });
     Route::group(['prefix' => 'apoteker'], function(){
-        Route::get('/index', [ApotekerController::class, "index"])->name('apoteker.index');
+        Route::get('/', [ApotekerController::class, "index"])->name('apoteker.index');
         });
         Route::get('/create', function(){
             return view('admin.apoteker.create');
