@@ -102,13 +102,13 @@
                 </ul>
               </div>
               <div class="quote_btn-container">
-                <a href="">
+                <a href="/login">
                   <i class="fa fa-user" aria-hidden="true"></i>
                   <span>
                     Login
                   </span>
                 </a>
-                <a href="">
+                <a href="/register">
                   <i class="fa fa-user" aria-hidden="true"></i>
                   <span>
                     Sign Up
